@@ -1,22 +1,22 @@
 package com.harsh.max;
 
 public class MaxFinder {
-    public static Float findMax(Float num1, Float num2, Float num3) {
-       Float max = num1;
-       if(num2.compareTo(max)>0){
-           max = num2;
+    public static String findMax(String str1, String str2, String str3) {
+       String max = str1;
+       if(str2.compareTo(max)>0){
+           max = str2;
        }
-       if(num3.compareTo(max)>0){
-           max=num3;
+       if(str3.compareTo(max)>0){
+           max=str3;
        }
-       System.out.printf("Max value of %s %s %s is : %s \n",num1,num2,num3,max);
+       System.out.printf("Max value of %s %s %s is : %s \n",str1,str2,str3,max);
        return max;
     }
 
     public static void main(String[] args) {
-        Float  num1 = 0f;
-        Float num2 = 1f;
-        Float num3 = 2f;
-        Float max = findMax(num1,num2,num3);
+        String  str1 ="Harsh";
+        String str2 = "Alabama";
+        String str3 = "Yash";
+        String max = findMax(str1,str2,str3);
     }
 }
